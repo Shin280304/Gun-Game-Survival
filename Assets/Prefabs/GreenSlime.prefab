@@ -372,11 +372,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ef5e21b80a43e42856f96fc4d1c8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 1
-  maxHP: 5000
+  moveSpeed: 2
+  maxHP: 50
   hpBar: {fileID: 5202863348246525892}
   enterDamage: 10
   stayDamage: 1
+  energyObject: {fileID: 0}
 --- !u!1 &6554267805909655342
 GameObject:
   m_ObjectHideFlags: 0

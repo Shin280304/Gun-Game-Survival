@@ -11,6 +11,8 @@
 .vs/
 .vscode/
 .idea/
+*.csproj
+*.slnx
 *.csproj.user
 *.sln.docstates
 

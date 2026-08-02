@@ -29,7 +29,12 @@ public class PlayerBullet : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             Enemy enemy = collision.GetComponent<Enemy>();
-            if(enemy != null)
+            if (enemy == null)
+            {
+                enemy = collision.GetComponentInParent<Enemy>();
+            }
+
+            if (enemy != null)
             {
                 enemy.TakeDamage(damage);
             }

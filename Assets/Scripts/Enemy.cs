@@ -5,12 +5,18 @@ public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] protected float moveSpeed = 1f;
     [SerializeField] protected float maxHP = 50f;
-    private float currentHP;
-    [SerializeField] private Image hpBar;
+    protected float currentHP;
+    [SerializeField] protected Image hpBar;
     protected PlayerController player;
     [SerializeField] protected float enterDamage = 10f;
     [SerializeField] protected float stayDamage = 1f;
-    
+
+    protected Rigidbody2D rb;
+
+    protected virtual void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     protected virtual void Start()
     {
@@ -26,9 +32,22 @@ public abstract class Enemy : MonoBehaviour
 
     protected void MoveToPlayer()
     {
+        if (player == null)
+        {
+            player = FindAnyObjectByType<PlayerController>();
+        }
+
         if (player != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            Vector2 targetPos = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            if (rb != null)
+            {
+                rb.MovePosition(targetPos);
+            }
+            else
+            {
+                transform.position = targetPos;
+            }
         }
     }
 
@@ -45,12 +64,16 @@ public abstract class Enemy : MonoBehaviour
     
     public virtual void Die()
     {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnEnemyKilled(this);
+        }
         Destroy(gameObject);
     }
 
     protected void UpdateHpBar()
     {
-        if(hpBar != null)
+        if (hpBar != null)
         {
             hpBar.fillAmount = currentHP / maxHP;
         }
