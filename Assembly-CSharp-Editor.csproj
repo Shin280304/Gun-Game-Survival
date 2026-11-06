@@ -43,13 +43,10 @@
     <UnityVersion>6000.4.10f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Laptop\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.2.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\Laptop\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.3.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.4.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.4.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.4.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
-    <Analyzer Include="C:\Users\Laptop\My project (1)\Library\PackageCache\com.unity.ai.inference@9a123aee5df7\Runtime\Core\SourceGenerator\SourceGenerators.dll" />
-    <Analyzer Include="C:\Users\Laptop\My project (1)\Library\PackageCache\com.unity.dt.app-ui@8ac7e730dd5d\Runtime\SourceGenerators\netstandard2.0\EnumToLowerCase.dll" />
-    <Analyzer Include="C:\Users\Laptop\My project (1)\Library\PackageCache\com.unity.dt.app-ui@8ac7e730dd5d\Runtime\MVVM\SourceGenerators\netstandard2.0\MVVMSourceGenerators.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\BossSystemSetupEditor.cs" />
@@ -691,10 +688,6 @@
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AiEditorToolsSdk">
-      <HintPath>Library\PackageCache\com.unity.ai.assistant@d9bb465c57d1\Modules\Unity.AI.Toolkit.Sdk\Editor\AiEditorToolsSdk.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -1227,10 +1220,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Purchasing.SecurityStub.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InferenceEngine">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Common.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1267,10 +1256,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Assistant.API.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.API.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
       <Private>False</Private>
@@ -1287,10 +1272,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Microsoft.GDK.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Assistant.Integrations.Profiler.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Integrations.Profiler.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1303,24 +1284,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Assistant.Tools.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Tools.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Purchasing.Stores">
       <HintPath>Library\ScriptAssemblies\Unity.Purchasing.Stores.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AppUI.Undo">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Undo.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Services.Core.Components">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Components.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.MCP.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.MCP.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.UnifiedRayTracing.Runtime">
@@ -1335,24 +1304,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InferenceEngine.MacBLAS">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.MacBLAS.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Assistant.Bridge.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Bridge.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Aseprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InferenceEngine.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
@@ -1407,10 +1364,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="HFDownloader">
-      <HintPath>Library\ScriptAssemblies\HFDownloader.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Microsoft.GDK.Discovery">
       <HintPath>Library\ScriptAssemblies\Unity.Microsoft.GDK.Discovery.dll</HintPath>
       <Private>False</Private>
@@ -1425,10 +1378,6 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared">
@@ -1455,16 +1404,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.Purchasing.Codeless.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AppUI.Redux">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Redux.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.MCP.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.MCP.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InferenceEngine.ONNX.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.ONNX.Editor.dll</HintPath>
+    <Reference Include="Unity.Purchasing.PaymentProviderService">
+      <HintPath>Library\ScriptAssemblies\Unity.Purchasing.PaymentProviderService.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
@@ -1473,14 +1414,6 @@
     </Reference>
     <Reference Include="Unity.Microsoft.GDK.Tools">
       <HintPath>Library\ScriptAssemblies\Unity.Microsoft.GDK.Tools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Purchasing.PaymentProviderService">
-      <HintPath>Library\ScriptAssemblies\Unity.Purchasing.PaymentProviderService.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Navigation">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Navigation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
@@ -1493,10 +1426,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Assistant.Agent.Dynamic.Extension.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
@@ -1591,18 +1520,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Assistant.Annotations.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Annotations.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.MVVM">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.MVVM.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Assistant.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Assistant.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
       <Private>False</Private>
@@ -1617,14 +1534,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Tracing">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Tracing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Redux.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Redux.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.SurfaceCache.Runtime">
@@ -1645,10 +1554,6 @@
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Purchasing.SecurityCore">
@@ -1683,16 +1588,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.PathTracing.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InferenceEngine.Tokenization">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.Tokenization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Navigation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
@@ -1705,10 +1602,6 @@
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.InferenceEngine.iOSBLAS">
-      <HintPath>Library\ScriptAssemblies\Unity.InferenceEngine.iOSBLAS.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Microsoft.GDK">
